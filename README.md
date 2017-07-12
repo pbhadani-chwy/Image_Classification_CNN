@@ -60,3 +60,4 @@ classifier.fit_generator(training_set,
 Note to create a validation set for testing the performance of the model and avoid model overfitting.
 # Sample training images (Input)
 ![cat 4001](https://user-images.githubusercontent.com/14236684/28104500-4fc95b1a-66a9-11e7-99a4-5f99131a3f7c.jpg)
+![dog 4003](https://user-images.githubusercontent.com/14236684/28104580-cd03c11a-66a9-11e7-875f-71a425b946f8.jpg)
