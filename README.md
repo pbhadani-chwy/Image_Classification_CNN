@@ -7,6 +7,7 @@ great scale.
 Below I will explain step by step procedure of building the classifier using Keras and CNN.
 
 # Step1.
+'''python
 import all necessary libraries including keras and matplotlib
 import os
 from random import randint
@@ -21,6 +22,7 @@ from keras.models import Model
 from keras.callbacks import EarlyStopping
 from keras.layers import Input, Convolution2D, MaxPooling2D, Dense, Dropout, Flatten,Reshape
 import matplotlib.pyplot as plt
+'''
 ...
 ...
 # step2.
@@ -30,15 +32,22 @@ reshape the image to improve the proccessing speed. (As taking the entire image 
 of the program.
 
 # step3.
+
 Initialize the classifier
+/
+'''python
 classifier = Sequential()
+'''
 
 # step4.
 
 Add multiple convolution and pooling layer to filter out the image and thus creating a feature map.
+/
+'''python
 classifier.add(Conv2D(32, (3, 3), input_shape = (64, 64, 3), activation = 'relu'))
 
 classifier.add(MaxPooling2D(pool_size = (2, 2)))
+'''
 
 # step5.
 Flatten the imput matrix, so that it can be feeded as an input to the dense CNN layer.
